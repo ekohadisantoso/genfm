@@ -1,0 +1,104 @@
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a987genfm.genfm.ActivityThree"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/blur_background_c1"
+        android:layout_height="match_parent">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_above="@+id/bottomBar"
+            android:layout_below="@+id/topBar">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Switch" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/floatingActionButtonFB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                       app:backgroundTint="#ffffff"
+                        android:src="@drawable/ic_globe_outline"
+                        app:fabSize="normal" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/floatingActionButtonTW"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:backgroundTint="#ffffff"
+                        android:src="@drawable/ic_facebook_logo"
+                        app:fabSize="normal" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/floatingActionButtonWeb"
+                        android:layout_width="wrap_content"
+                        app:backgroundTint="#ffffff"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_twitter"
+                        app:fabSize="normal" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottomNavView_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:menu="@menu/bottom_navigation_menu">
+
+
+            </android.support.design.widget.BottomNavigationView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
